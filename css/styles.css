@@ -14,3 +14,15 @@
   max-height: 250px; /* ajustá a tu gusto */
   object-fit: cover; /* recorta sin deformar */
 }
+
+.navbar .nav-link {
+  color: green;
+}
+
+.navbar .nav-link:hover {
+  color: brown;
+}
+
+.navbar .nav-link.active {
+  color: orange;
+}
