@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.carousel-item img {
+  max-height: 700px; /* ajustá el valor según lo que quieras */
+  object-fit: cover; /* recorta la imagen sin deformarla */
+}
+
+.card img {
+  max-height: 250px; /* ajustá a tu gusto */
+  object-fit: cover; /* recorta sin deformar */
+}
