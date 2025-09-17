@@ -48,3 +48,17 @@
 .form-text {
   color: antiquewhite;
 }
+
+.card-body-individual {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-family: 'Luckiest Guy', cursive;
+  color:darkgreen;
+  font-size: 1.5rem;
+  padding: 1.5rem;
+}
+
+.card.text-center-individual {
+border: none;
+}
