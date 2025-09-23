@@ -62,3 +62,80 @@
 .card.text-center-individual {
 border: none;
 }
+
+.header-somos h1 {
+  font-family: 'Luckiest Guy', cursive;
+  color: darkgreen;
+  text-align: center;
+  padding: 10px;
+}
+
+.header-somos p {
+  font-family: 'Montserrat Alternates', sans-serif;
+  color: brown;
+  text-align: center;
+  padding: 10px;
+} 
+
+.tarjeta-familia p {
+  font-family: 'Montserrat Alternates', sans-serif;
+  color: darkgreen;
+  text-align: center;
+  padding: 10px;
+}
+
+.tarjeta-familia {
+  border-color: orange;
+}
+
+.hero-quebrada {
+  background-image: url("../assets/Hornocal.JPG"); /* ruta relativa */
+  background-size: cover; /* hace que cubra todo el contenedor */
+  background-position: center; /* centra la imagen */
+  background-repeat: no-repeat; /* evita que se repita */
+  color: white;
+  padding: 100px 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* sombra para mejorar la legibilidad */
+}
+
+.hero-quebrada {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-quebrada::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5); /* blanco con 50% opacidad */
+  z-index: -1;
+}
+
+.hero-yungas {
+  background-image: url("../assets/yungas.jpg"); /* ruta relativa */
+  background-size: cover; /* hace que cubra todo el contenedor */
+  background-position: center; /* centra la imagen */
+  background-repeat: no-repeat; /* evita que se repita */
+  color: white;
+  padding: 100px 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* sombra para mejorar la legibilidad */
+}
+
+.hero-yungas {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-yungas::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5); /* blanco con 50% opacidad */
+  z-index: -1;
+}
