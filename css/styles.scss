@@ -1,9 +1,12 @@
-@charset "UTF-8";
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+@import 'variables';
+@import 'mixins';
+@import 'header';
+@import 'footer';
 
 .carousel-item img {
   max-height: 700px; /* ajustá el valor según lo que quieras */
@@ -53,32 +56,32 @@
   display: flex;
   justify-content: center;
   text-align: center;
-  font-family: "Luckiest Guy", cursive;
-  color: darkgreen;
+  font-family: 'Luckiest Guy', cursive;
+  color:darkgreen;
   font-size: 1.5rem;
   padding: 1.5rem;
 }
 
 .card.text-center-individual {
-  border: none;
+border: none;
 }
 
 .header-somos h1 {
-  font-family: "Luckiest Guy", cursive;
+  font-family: 'Luckiest Guy', cursive;
   color: darkgreen;
   text-align: center;
   padding: 10px;
 }
 
 .header-somos p {
-  font-family: "Montserrat Alternates", sans-serif;
+  font-family: 'Montserrat Alternates', sans-serif;
   color: brown;
   text-align: center;
   padding: 10px;
-}
+} 
 
 .tarjeta-familia p {
-  font-family: "Montserrat Alternates", sans-serif;
+  font-family: 'Montserrat Alternates', sans-serif;
   color: darkgreen;
   text-align: center;
   padding: 10px;
@@ -139,5 +142,3 @@
   background-color: rgba(255, 255, 255, 0.5); /* blanco con 50% opacidad */
   z-index: -1;
 }
-
-/*# sourceMappingURL=styles.css.map */
