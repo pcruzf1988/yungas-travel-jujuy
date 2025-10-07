@@ -1,0 +1,17 @@
+// sass/styles.scss
+@import 'variables';
+@import 'mixins';
+@import 'base';
+
+/* componentes */
+@import 'components/navbar';
+@import 'components/carousel';
+@import 'components/cards';
+@import 'components/header';
+@import 'components/forms';
+@import 'components/heroes';
+
+@import 'contacto';
+@import 'sobre-nosotros';
+
+@import 'quebrada';

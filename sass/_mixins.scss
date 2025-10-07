@@ -1,0 +1,31 @@
+// sass/_mixins.scss
+@mixin image-fit($max-height:null) {
+  @if $max-height {
+    max-height: $max-height;
+  }
+  object-fit: cover;
+}
+
+@mixin hero-bg($img-path, $padding: 100px 20px, $overlay: rgba(255,255,255,0.5)) {
+  background-image: url(#{$img-path});
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  padding: $padding;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+  position: relative;
+  z-index: 1;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $overlay;
+    z-index: -1;
+  }
+}
+

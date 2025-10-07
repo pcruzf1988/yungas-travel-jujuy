@@ -1,0 +1,8 @@
+// sass/components/_heroes.scss
+.hero-quebrada {
+  @include hero-bg($img-hornocal);
+}
+
+.hero-yungas {
+  @include hero-bg($img-yungas);
+}

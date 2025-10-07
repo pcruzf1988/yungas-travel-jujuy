@@ -1,0 +1,211 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* componentes */
+.navbar .nav-link {
+  color: green;
+}
+.navbar .nav-link:hover {
+  color: brown;
+}
+.navbar .nav-link.active {
+  color: orange;
+}
+
+.carousel-item img {
+  max-height: 700px;
+  object-fit: cover;
+}
+
+.card {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+}
+.card img {
+  max-height: 250px;
+  object-fit: cover;
+  object-fit: cover;
+}
+.card.text-center-individual {
+  border: none;
+}
+.card .card-body-individual {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "Montserrat Alternates", sans-serif;
+  color: darkgreen;
+  font-size: 1.5rem;
+  padding: 1.5rem;
+  flex: 1;
+}
+.card .card-body-individual .btn {
+  margin-top: 1rem;
+  background-color: darkgreen;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  transition: background-color 0.3s;
+}
+.card .card-body-individual .btn:hover {
+  background-color: #003100;
+}
+
+@media (max-width: 767px) {
+  .card-body-individual h5.card-title {
+    font-size: 1rem;
+  }
+  .card-body-individual p.card-text {
+    font-size: 0.875rem;
+  }
+}
+.header-somos h1 {
+  font-family: "Luckiest Guy", cursive;
+  color: darkgreen;
+  text-align: center;
+  padding: 10px;
+}
+.header-somos p {
+  font-family: "Montserrat Alternates", sans-serif;
+  color: brown;
+  text-align: center;
+  padding: 10px;
+}
+
+.formulario-contacto {
+  max-width: 600px;
+  margin: 20px;
+  padding: 20px;
+  border: 2px solid white;
+  border-radius: 5px;
+  background-color: rgba(10, 83, 22, 0.9);
+  color: white;
+}
+
+.contenedor-formulario {
+  padding: 20px;
+  background-image: url(../assets/san-francisco/san-francisco-29);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.form-text {
+  color: antiquewhite;
+}
+
+.hero-quebrada {
+  background-image: url(../assets/hornocal.JPG);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  padding: 100px 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  position: relative;
+  z-index: 1;
+}
+.hero-quebrada::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  z-index: -1;
+}
+
+.hero-yungas {
+  background-image: url(../assets/yungas.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  padding: 100px 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  position: relative;
+  z-index: 1;
+}
+.hero-yungas::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  z-index: -1;
+}
+
+.contenedor-formulario {
+  padding: 20px;
+  background-image: url(../assets/san-francisco/san-francisco-29.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.tarjeta-familia p {
+  font-family: "Montserrat Alternates", sans-serif;
+  color: darkgreen;
+  text-align: center;
+  padding: 10px;
+  min-height: 260px;
+}
+.tarjeta-familia {
+  border-color: brown;
+}
+
+.quienes-somos {
+  padding: 20px;
+  position: relative;
+  background-image: url(../assets/san-francisco/san-francisco-20.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+}
+.quienes-somos::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.quienes-somos > * {
+  position: relative;
+  z-index: 2;
+}
+
+.quienes-somos h1 {
+  font-family: "Luckiest Guy", cursive;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+p.mt-4 {
+  font-family: "Montserrat Alternates", sans-serif;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+  z-index: 2;
+}
+
+/*# sourceMappingURL=main.css.map */

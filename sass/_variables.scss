@@ -1,0 +1,56 @@
+// paleta de colores para usar mas adelante //
+
+// Colores base
+$verde: #417341;
+$marron: #743d2b;
+$amarillo: #f8be00;
+
+// Verde - variantes
+$verde-claro-1: #5da35d;
+$verde-claro-2: #8dbf8d;
+$verde-oscuro-1: #254225;
+$verde-oscuro-2: #091109;
+
+// Marrón - variantes
+$marron-claro-1: #ab5a3f;
+$marron-claro-2: #c9846e;
+$marron-oscuro-1: #3c1f16;
+$marron-oscuro-2: #040201;
+
+// Amarillo - variantes
+$amarillo-claro-1: #ffd345;
+$amarillo-claro-2: #fee592;
+$amarillo-oscuro-1: #ab8300;
+$amarillo-oscuro-2: #5f4800;
+
+// Colores
+$color-primary: darkgreen;
+$color-secondary: brown;
+$color-accent: orange;
+$color-white: white;
+$color-text-light: antiquewhite;
+
+// sass/_variables.scss
+// colores (usé los nombres originales para no cambiar apariencia)
+$color-green: green;
+$color-brown: brown;
+$color-orange: orange;
+$color-white: white;
+$color-antique: antiquewhite;
+$color-darkgreen: darkgreen;
+
+// tipografías
+$font-luckiest: 'Luckiest Guy', cursive;
+$font-montserrat: 'Montserrat Alternates', sans-serif;
+
+// imágenes de fondo 
+$img-san-francisco: "../assets/san-francisco/san-francisco-29";
+$img-hornocal: "../assets/hornocal.JPG";
+$img-yungas: "../assets/yungas.jpg";
+$img-fondo-contacto:"../assets/san-francisco/san-francisco-29.jpg";
+$img-fondo-somos:"../assets/san-francisco/san-francisco-20.jpg";
+
+// espaciamiento / tamaños 
+$max-card-img-height: 250px;
+$max-carousel-img-height: 700px;
+

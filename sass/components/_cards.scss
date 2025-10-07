@@ -1,0 +1,60 @@
+// sass/components/_cards.scss
+.card {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  transition: transform 0.3s, box-shadow 0.3s;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.25);
+  }
+
+  img {
+    @include image-fit($max-card-img-height);
+    object-fit: cover;
+  }
+
+  &.text-center-individual {
+    border: none;
+  }
+
+  .card-body-individual {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: $font-montserrat;
+    color: $color-darkgreen;
+    font-size: 1.5rem;
+    padding: 1.5rem;
+    flex: 1; 
+
+
+    .btn {
+      margin-top: 1rem;
+      background-color: $color-darkgreen;
+      color: #fff;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 6px;
+      transition: background-color 0.3s;
+
+      &:hover {
+        background-color: darken($color-darkgreen, 10%);
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .card-body-individual {
+    h5.card-title {
+      font-size: 1rem; // achica el título
+    }
+    p.card-text {
+      font-size: 0.875rem; // achica el texto
+    }
+  }
+}

@@ -1,0 +1,8 @@
+// sass/_contacto.scss
+.contenedor-formulario {
+  padding: 20px;
+  background-image: url(#{$img-fondo-contacto});
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}

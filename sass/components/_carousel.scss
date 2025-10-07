@@ -1,0 +1,6 @@
+// sass/components/_carousel.scss
+.carousel-item {
+  img {
+    @include image-fit($max-carousel-img-height);
+  }
+}

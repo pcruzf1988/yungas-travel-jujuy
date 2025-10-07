@@ -1,0 +1,14 @@
+// sass/components/_navbar.scss
+.navbar {
+  .nav-link {
+    color: $color-green;
+
+    &:hover {
+      color: $color-brown;
+    }
+
+    &.active {
+      color: $color-orange;
+    }
+  }
+}

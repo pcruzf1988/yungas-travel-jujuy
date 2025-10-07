@@ -1,0 +1,17 @@
+// sass/components/_header.scss
+.header-somos {
+  h1 {
+    font-family: $font-luckiest;
+    color: $color-darkgreen;
+    text-align: center;
+    padding: 10px;
+  }
+
+  p {
+    font-family: $font-montserrat;
+    color: $color-brown;
+    text-align: center;
+    padding: 10px;
+  }
+}
+
