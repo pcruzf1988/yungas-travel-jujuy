@@ -1,3 +1,5 @@
+@use 'variables' as *;
+
 // sass/_mixins.scss
 @mixin image-fit($max-height:null) {
   @if $max-height {
@@ -34,4 +36,113 @@
   height: $height;
   object-fit: cover;
   object-position: center;
+}
+
+@mixin dropdown-menu($bg-color: $color-white, $text-color: $color-darkgreen) {
+  background-color: $bg-color;
+  color: $text-color;
+
+  a {
+    color: $text-color;
+
+    &:hover {
+      background-color: lighten($bg-color, 10%);
+      color: darken($text-color, 10%);
+    }
+  }
+}
+
+
+// animacion flip Y
+$ANIMATION_DURATION: 2s;
+
+@-webkit-keyframes flipY {
+  0%{ -webkit-transform:rotate3d(0, 1, 0, 90deg); opacity: 0;}
+  40%{ -webkit-transform: rotate3d(0, 1, 0, -20deg);}
+  60%{ -webkit-transform: rotate3d(0, 1, 0, 10deg); opacity: 1;}
+  80%{ -webkit-transform:rotate3d(0, 1, 0, -5deg);}
+  100%{ -webkit-transform:rotate3d(0, 1, 0, 0deg);}
+}
+
+@-moz-keyframes flipY {
+  0% { -moz-transform: rotate3d(0, 1, 0, 90deg); opacity: 0; }
+  40% { -moz-transform: rotate3d(0, 1, 0, -20deg); }
+  60% { -moz-transform: rotate3d(0, 1, 0, 10deg); opacity: 1; }
+  80% { -moz-transform: rotate3d(0, 1, 0, -5deg);}
+  100%{ -moz-transform:rotate3d(0, 1, 0, 0deg);}
+}
+
+@-o-keyframes flipY {
+  0% { -o-transform: rotate3d(0, 1, 0, 90deg); opacity: 0; }
+  40% { -o-transform: rotate3d(0, 1, 0, -20deg); }
+  60% { -o-transform: rotate3d(0, 1, 0, 10deg); opacity: 1; }
+  80% { -o-transform: rotate3d(0, 1, 0, -5deg);}
+  100%{ -o-transform:rotate3d(0, 1, 0, 0deg);}
+}
+
+@keyframes flipY {
+  0% { transform: rotate3d(0, 1, 0, 90deg); opacity: 0; }
+  40% { transform: rotate3d(0, 1, 0, -20deg); }
+  60% {transform: rotate3d(0, 1, 0, 10deg); opacity: 1; }
+  80% {transform: rotate3d(0, 1, 0, -5deg);}
+  100%{ transform:rotate3d(0, 1, 0, 0deg);}
+}
+
+.u--flipY {
+  -webkit-animation: flipY $ANIMATION_DURATION ease-in;
+  -moz-animation:    flipY $ANIMATION_DURATION ease-in;
+  -o-animation:      flipY $ANIMATION_DURATION ease-in;
+  animation:         flipY $ANIMATION_DURATION ease-in;
+}
+
+// Fade In
+//--------------------------------//
+@-webkit-keyframes fadeIn {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-moz-keyframes fadeIn {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-o-keyframes fadeIn{
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@keyframes fadeIn {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.u--fadeIn {
+  -webkit-animation: fadeIn $ANIMATION_DURATION ease-in;
+  -moz-animation:    fadeIn $ANIMATION_DURATION ease-in;
+  -o-animation:      fadeIn $ANIMATION_DURATION ease-in;
+  animation:         fadeIn $ANIMATION_DURATION ease-in;
+}
+
+// Slide Left
+//--------------------------------//
+@-webkit-keyframes slideLeft {
+  0% { -webkit-transform: translate3d(-100%, 0, 0);}
+  100% {-webkit-transform: none;}
+}
+@-moz-keyframes slideLeft {
+  0% {-moz-transform: translate3d(-100%, 0, 0);}
+  100% {-moz-transform: none;}
+}
+@-o-keyframes slideLeft{
+  0% {-o-transform: translate3d(-100%, 0, 0);}
+  100% {-o-transform: none;}
+}
+@keyframes slideLeft {
+  0% {transform: translate3d(-100%, 0, 0);}
+  100% {transform: none;}
+}
+
+.u--slideLeft {
+  -webkit-animation: slideLeft $ANIMATION_DURATION;
+  -moz-animation:    slideLeft $ANIMATION_DURATION;
+  -o-animation:      slideLeft $ANIMATION_DURATION;
+  animation:         slideLeft $ANIMATION_DURATION;
 }
