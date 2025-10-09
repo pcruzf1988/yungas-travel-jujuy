@@ -1,3 +1,6 @@
+@use '../mixins' as *;
+@use '../variables' as *; 
+
 // sass/components/_cards.scss
 .card {
   border-radius: 12px;

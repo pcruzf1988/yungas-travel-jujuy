@@ -29,3 +29,9 @@
   }
 }
 
+@mixin image-fit($height) {
+  width: 100%;
+  height: $height;
+  object-fit: cover;
+  object-position: center;
+}

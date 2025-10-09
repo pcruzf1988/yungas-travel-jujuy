@@ -1,4 +1,7 @@
 // sass/components/_carousel.scss
+@use '../mixins' as *;
+@use '../variables' as *;
+
 .carousel-item {
   img {
     @include image-fit($max-carousel-img-height);

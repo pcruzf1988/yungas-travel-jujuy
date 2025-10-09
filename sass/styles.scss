@@ -1,17 +1,16 @@
 // sass/styles.scss
-@import 'variables';
-@import 'mixins';
-@import 'base';
+@use 'variables' as *;
+@use 'mixins' as *;
+@use 'base' as *;
 
 /* componentes */
-@import 'components/navbar';
-@import 'components/carousel';
-@import 'components/cards';
-@import 'components/header';
-@import 'components/forms';
-@import 'components/heroes';
+@use 'components/navbar' as *;
+@use 'components/carousel' as *;
+@use 'components/cards' as *;
+@use 'components/header' as *;
+@use 'components/forms' as *;
+@use 'components/heroes' as *;
 
-@import 'contacto';
-@import 'sobre-nosotros';
-
-@import 'quebrada';
+@use 'contacto' as *;
+@use 'sobre-nosotros' as *;
+@use 'quebrada' as *;

@@ -1,3 +1,6 @@
+@use '../mixins' as *;
+@use '../variables' as *; 
+
 // sass/components/_heroes.scss
 .hero-quebrada {
   @include hero-bg($img-hornocal);

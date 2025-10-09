@@ -1,7 +1,9 @@
 // sass/components/_navbar.scss
+@use '../variables' as *;
+
 .navbar {
   .nav-link {
-    color: $color-green;
+    color: $color-primary;
 
     &:hover {
       color: $color-brown;
