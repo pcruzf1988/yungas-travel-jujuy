@@ -1,3 +1,13 @@
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat Alternates", sans-serif;
+  color: darkgreen;
+}
+
+p {
+  font-family: "Montserrat Alternates", sans-serif;
+  color: brown;
+}
+
 @-webkit-keyframes flipY {
   0% {
     -webkit-transform: rotate3d(0, 1, 0, 90deg);
@@ -183,6 +193,19 @@
   object-position: center;
 }
 
+.carousel p {
+  font-size: 1.2rem;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.carousel h5 {
+  font-family: "Montserrat Alternates", sans-serif;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
 .card {
   border-radius: 12px;
   overflow: hidden;
@@ -237,7 +260,7 @@
   }
 }
 .header-somos h1 {
-  font-family: "Luckiest Guy", cursive;
+  font-family: "Montserrat Alternates", sans-serif;
   color: darkgreen;
   text-align: center;
   padding: 10px;
@@ -315,6 +338,13 @@
   z-index: -1;
 }
 
+.footer p {
+  font-family: "Montserrat Alternates", sans-serif;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
 .contenedor-formulario {
   padding: 20px;
   background-image: url(../assets/san-francisco/san-francisco-29.jpg);
@@ -331,7 +361,7 @@
   min-height: 350px;
 }
 .tarjeta-familia {
-  border-color: brown;
+  border-color: darkgreen;
 }
 
 .quienes-somos {

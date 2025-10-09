@@ -1,9 +1,10 @@
 @use '../variables' as *;
+@use '../mixins' as *;
 
 // sass/components/_header.scss
 .header-somos {
   h1 {
-    font-family: $font-luckiest;
+    font-family: $font-montserrat;
     color: $color-darkgreen;
     text-align: center;
     padding: 10px;

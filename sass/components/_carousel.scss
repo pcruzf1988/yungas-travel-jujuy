@@ -7,3 +7,16 @@
     @include image-fit($max-carousel-img-height);
   }
 }
+
+.carousel p {
+  font-size: 1.2rem;
+  color: $color-white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.carousel h5 {
+  font-family: $font-montserrat;
+  color: $color-white;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+}

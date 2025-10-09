@@ -1,0 +1,9 @@
+@use '../mixins' as *;
+@use '../variables' as *;
+
+.footer p {
+  font-family: $font-montserrat;
+  color: $color-white;
+  text-align: center;
+  padding: 10px;
+}

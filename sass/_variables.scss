@@ -55,3 +55,13 @@ $max-carousel-img-height: 700px;
 
 //altura de las imágenes del carousel
 $max-carousel-img-height: 500px;
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-montserrat;
+    color: $color-darkgreen;
+}
+
+p {
+  font-family: $font-montserrat;
+    color: $color-brown;
+}
