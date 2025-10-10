@@ -146,3 +146,44 @@ $ANIMATION_DURATION: 2s;
   -o-animation:      slideLeft $ANIMATION_DURATION;
   animation:         slideLeft $ANIMATION_DURATION;
 }
+
+// Flip X
+//--------------------------------//
+@-webkit-keyframes flipX {
+  0%{ -webkit-transform:rotate3d(1, 0, 0, 90deg); opacity: 0;}
+  40%{ -webkit-transform: rotate3d(1, 0, 0, -20deg);}
+  60%{ -webkit-transform: rotate3d(1, 0, 0, 10deg); opacity: 1;}
+  80%{ -webkit-transform:rotate3d(1, 0, 0, -5deg);}
+  100%{ -webkit-transform:rotate3d(1, 0, 0, 0deg);}
+}
+
+@-moz-keyframes flipX {
+  0% { -moz-transform: rotate3d(1, 0, 0, 90deg); opacity: 0; }
+  40% { -moz-transform: rotate3d(1, 0, 0, -20deg); }
+  60% { -moz-transform: rotate3d(1, 0, 0, 10deg); opacity: 1; }
+  80% { -moz-transform: rotate3d(1, 0, 0, -5deg);}
+  100% { -moz-transform: rotate3d(1, 0, 0, 0deg);}
+}
+
+@-o-keyframes flipX {
+  0% { -o-transform: rotate3d(1, 0, 0, 90deg); opacity: 0; }
+  40% { -o-transform: rotate3d(1, 0, 0, -20deg); }
+  60% { -o-transform: rotate3d(1, 0, 0, 10deg); opacity: 1; }
+  80% { -o-transform: rotate3d(1, 0, 0, -5deg);}
+  100% { -o-transform: rotate3d(1, 0, 0, 0deg);}
+}
+
+@keyframes flipX {
+  0% { transform: rotate3d(1, 0, 0, 90deg); opacity: 0; }
+  40% { transform: rotate3d(1, 0, 0, -20deg); }
+  60% { transform: rotate3d(1, 0, 0, 10deg); opacity: 1; }
+  80% { transform: rotate3d(1, 0, 0, -5deg);}
+  100% { transform: rotate3d(1, 0, 0, 0deg);}
+}
+
+.u--flipX {
+  -webkit-animation: flipX $ANIMATION_DURATION ease-in;
+  -moz-animation:    flipX $ANIMATION_DURATION ease-in;
+  -o-animation:      flipX $ANIMATION_DURATION ease-in;
+  animation:         flipX $ANIMATION_DURATION ease-in;
+}
