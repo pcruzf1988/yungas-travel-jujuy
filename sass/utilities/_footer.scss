@@ -1,5 +1,5 @@
-@use '../mixins' as *;
-@use '../variables' as *;
+@use 'mixins' as *;
+@use 'variables' as *;
 
 .footer p {
   font-family: $font-montserrat;

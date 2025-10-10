@@ -1,17 +1,17 @@
 // sass/styles.scss
-@use 'variables' as *;
-@use 'mixins' as *;
-@use 'base' as *;
+@use '../sass/utilities/variables' as *;
+@use '../sass/utilities/mixins' as *;
+@use '../sass/base/base' as *;
 
 /* componentes */
-@use 'components/navbar' as *;
-@use 'components/carousel' as *;
-@use 'components/cards' as *;
-@use 'components/header' as *;
-@use 'components/forms' as *;
-@use 'components/heroes' as *;
-@use 'components/footer' as *;
+@use 'utilities/navbar' as *;
+@use 'utilities/carousel' as *;
+@use 'utilities/cards' as *;
+@use 'utilities/header' as *;
+@use 'utilities/forms' as *;
+@use 'utilities/heroes' as *;
+@use 'utilities/footer' as *;
 
-@use 'contacto' as *;
-@use 'sobre-nosotros' as *;
-@use 'quebrada' as *;
+@use '../sass/layout/contacto' as *;
+@use '../sass/layout/sobre-nosotros' as *;
+@use '../sass/layout/quebrada' as *;
