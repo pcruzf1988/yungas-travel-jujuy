@@ -1,7 +1,7 @@
 // sass/styles.scss
 @use '../sass/utilities/variables' as *;
 @use '../sass/utilities/mixins' as *;
-@use '../sass/base/base' as *;
+@use '../sass/base/reset' as *;
 
 
 @use 'utilities/navbar' as *;
