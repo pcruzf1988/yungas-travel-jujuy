@@ -9,3 +9,7 @@
 .hero-yungas {
   @include hero-bg($img-yungas);
 }
+
+.hero-puna {
+  @include hero-bg($img-puna);
+}

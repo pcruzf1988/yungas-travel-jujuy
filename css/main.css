@@ -258,7 +258,6 @@ p {
   box-sizing: border-box;
 }
 
-/* componentes */
 .navbar .nav-link {
   color: darkgreen;
 }
@@ -425,6 +424,28 @@ p {
   z-index: -1;
 }
 
+.hero-puna {
+  background-image: url(../assets/barrancas.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  padding: 100px 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  position: relative;
+  z-index: 1;
+}
+.hero-puna::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  z-index: -1;
+}
+
 .footer p {
   font-family: "Montserrat Alternates", sans-serif;
   color: white;
@@ -448,7 +469,7 @@ p {
   min-height: 350px;
 }
 .tarjeta-familia {
-  border-color: darkgreen;
+  border-color: white;
 }
 
 .quienes-somos {
@@ -475,7 +496,7 @@ p {
 }
 
 .quienes-somos h1 {
-  font-family: "Luckiest Guy", cursive;
+  font-family: "Montserrat Alternates", sans-serif;
   color: white;
   text-align: center;
   padding: 10px;
