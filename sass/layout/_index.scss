@@ -1,0 +1,67 @@
+@use '../utilities/variables' as *;
+@use '../utilities/mixins' as *;
+
+.link-conocenos {
+    display: flex;
+    justify-content: center;
+    background-color: $verde;
+    align-items: stretch;
+}
+
+.wrapper-conocenos {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    align-items: stretch;
+    grid-auto-rows: 1fr;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.nosotros {
+    padding: 20px;
+    background-color: $verde;
+    color: $color-white;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    text-align: center;
+}
+
+.imagen-conocenos {
+    width: 100%;
+    height: 100%;
+}
+
+.imagen-conocenos img {
+    width: 100%;
+    max-width: 800px;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    grid-column: 2 / 3;
+    grid-row: 1;
+}
+
+.nosotros h4 {
+    padding: 20px;
+    font-family: $font-montserrat;
+    color: $color-white;
+}
+
+.nosotros a {
+    margin: 20px;
+}
+
+@media (max-width: 768px) {
+    .wrapper-conocenos {
+        grid-template-columns: 1fr;
+    }
+
+    .nosotros, .imagen-conocenos {
+        grid-column: 1 / 2;
+    }
+
+    .imagen-conocenos {
+        margin-top: 10px;
+    }
+}
