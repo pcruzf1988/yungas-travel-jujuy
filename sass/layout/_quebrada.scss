@@ -1,0 +1,125 @@
+@use '../utilities/variables' as *;
+@use '../utilities/mixins' as *;
+
+.recomendaciones {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.wrapper-recomendaciones {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: stretch;
+    grid-auto-rows: 1fr;
+    margin: 0 auto;
+    width: 100%;
+    max-width: none;
+
+    ul {
+        list-style: none;
+        padding-left: 0;
+        text-align: left;
+        margin-top: 30px;
+    }
+
+    li {
+        margin: 30px;
+    }
+
+    i {
+        margin-right: 10px;
+        font-size: 1.2rem;
+        color: white;
+    }
+
+    a {
+        background-color: $marron;
+        color: white;
+        padding: 12px 24px; // más horizontal para el texto
+        border-radius: 50px; // pastilla
+        border: none;
+        display: inline-block; // se ajusta al contenido
+        text-decoration: none;
+        font-weight: bold;
+        transition: background-color 0.2s ease, transform 0.2s ease;
+
+        &:hover {
+            background-color: darken($marron, 10%);
+            transform: translateY(-2px);
+            color: white;
+        }
+    }
+}
+
+.info-importante {
+    padding: 20px;
+    background-color: $verde;
+    color: $color-white;
+    text-align: center;
+
+    h5 {
+        padding: 20px;
+        font-family: $font-montserrat;
+        color: $color-white;
+    }
+
+}
+
+.sugerencias {
+    padding: 20px;
+    background-color: $amarillo;
+    color: $color-white;
+    text-align: center;
+
+
+    h5 {
+        padding: 20px;
+        font-family: $font-montserrat;
+        color: $color-white;
+    }
+
+    a {
+        margin: 20px;
+    }
+}
+
+
+.info-importante ul li i {
+    color: $color-white;
+    margin-right: 10px;
+    font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+    .wrapper-recomendaciones {
+        grid-template-columns: 1fr;
+
+        .nosotros,
+        .imagen-conocenos {
+            grid-column: 1 / 2;
+        }
+
+        .imagen-conocenos {
+            margin-top: 10px;
+        }
+    }
+}
+
+/* Tablets */
+@media (max-width: 1024px) and (min-width: 769px) {
+    .wrapper-conocenos {
+        grid-template-columns: 1fr 1fr; // dos columnas iguales
+
+        .nosotros,
+        .imagen-conocenos {
+            grid-column: auto;
+        }
+
+        .imagen-conocenos {
+            img {
+                max-width: 100%;
+            }
+        }
+    }
+}
