@@ -51,6 +51,10 @@ p {
   height: auto;
 }
 
+body {
+  padding-top: 70px;
+}
+
 @-webkit-keyframes flipY {
   0% {
     -webkit-transform: rotate3d(0, 1, 0, 90deg);
@@ -303,6 +307,10 @@ p {
 
 html, body {
   overflow-x: hidden;
+}
+
+body {
+  padding-top: 70px;
 }
 
 .navbar .nav-link {
