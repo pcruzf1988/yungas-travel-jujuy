@@ -1,4 +1,9 @@
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Montserrat Alternates", sans-serif;
   color: darkgreen;
 }
@@ -12,7 +17,7 @@ p {
   position: fixed;
   width: 60px;
   height: 60px;
-  bottom: 20px;
+  bottom: 50px;
   right: 20px;
   background-color: #25d366;
   color: #fff;
@@ -25,13 +30,14 @@ p {
   z-index: 999;
   transition: transform 0.3s ease;
 }
-
+.btn-whatsapp i {
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .btn-whatsapp:hover {
   transform: scale(1.1);
-  color: #fff;
-}
-
-.btn-whatsapp {
   animation: pulse 1.5s infinite;
 }
 
@@ -40,7 +46,7 @@ p {
     transform: scale(1);
   }
   70% {
-    transform: scale(1.1);
+    transform: scale(1.15);
   }
   100% {
     transform: scale(1);
@@ -49,10 +55,6 @@ p {
 .nav-logo {
   width: 100px;
   height: auto;
-}
-
-body {
-  padding-top: 70px;
 }
 
 @-webkit-keyframes flipY {
